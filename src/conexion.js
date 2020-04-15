@@ -12,4 +12,4 @@ mongoose.connect(process.env.URL,{
 })
 .catch(()=>{
     console.log("error de conexion a mongo");
-})
+});

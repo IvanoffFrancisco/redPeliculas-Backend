@@ -13,15 +13,18 @@ const MovieSchema=new Schema({
         type:String,
         required:true,
     },
-    recommend:[
-        {
-            user:{
-                type:String,
-                require:true,
-                unique:true
-            },
-            coment:String,
-            estado:Boolean
-        }
-    ]
+    description:{
+        type:String,
+    },
+    director:{
+        type:String
+    },
+    elenco:{
+        type:String
+    },
+    rank:{
+        type:Number
+    }
 })
+
+module.exports=model("movie",MovieSchema);
